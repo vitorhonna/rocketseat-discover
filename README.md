@@ -17,13 +17,13 @@
 #
 ### 📚 **Guias estelares**
 
-1. ✅ Guia estelar de programação
-1. ✅ Guia estelar de HTTP
-1. ✅ O guia estelar de HTML
-1. ❌ O guia estelar de CSS
-1. ❌ O guia estelar de JavaScript
-1. ❌ Guia estelar de Git
-1. ❌ Guia estelar de Github
+1. ✅ Guia Estelar de Programação
+1. ✅ Guia Estelar de HTTP
+1. ✅ O Guia Estelar de HTML
+1. ✅ O Guia Estelar de CSS
+1. ❌ O Guia Estelar de JavaScript
+1. ❌ Guia Estelar de Git
+1. ❌ Guia Estelar de Github
 
 #
 ### 👨🏽‍🚀 **Preparação de astronautas**
@@ -43,6 +43,6 @@
 #
 ### 🛰️ **Viajando ao espaço**
 
-1. ❌ NodeJS: O motor da nave
-1. ❌ NodeJS + EJS: HTML inteligente
+1. ❌ NodeJS: O Motor da Nave
+1. ❌ NodeJS + EJS: HTML Inteligente
 1. ❌ SQL, a caixa preta da nossa nave
