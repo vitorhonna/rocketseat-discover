@@ -1,6 +1,9 @@
 # Rocketseat - Discover
-Curso da Rocketseat de fundamentos da programação.
+<div align="center">
 
+![Rocketseat Discover](images/rocketseat_discover.png)
+
+</div>
 
 ## Módulos
 
@@ -16,9 +19,9 @@ Curso da Rocketseat de fundamentos da programação.
 
 1. ✅ Guia estelar de programação
 1. ✅ Guia estelar de HTTP
-1. ❌ Guia estelar de HTML
-1. ❌ Guia estelar de CSS
-1. ❌ Guia estelar de JavaScript
+1. ✅ O guia estelar de HTML
+1. ❌ O guia estelar de CSS
+1. ❌ O guia estelar de JavaScript
 1. ❌ Guia estelar de Git
 1. ❌ Guia estelar de Github
 
@@ -28,7 +31,7 @@ Curso da Rocketseat de fundamentos da programação.
 1. ❌ (HTML) Formulários de outro planeta
 1. ❌ (HTML) HTML que faz sentido, para todos
 1. ❌ (HTML) Posso ver e ouvir o HTML
-1. ❌ (HTML) Pilotando com a DOM
+1. ❌ (JavaScript) Pilotando com a DOM
 1. ❌ (CSS)  Nem tudo são pixels
 1. ❌ (CSS) Nem só de classes ou ID's
 1. ❌ (CSS) Uma caixa dentro da outra
