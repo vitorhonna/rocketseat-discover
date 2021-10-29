@@ -22,7 +22,7 @@
 1. ✅ O Guia Estelar de HTML
 1. ✅ O Guia Estelar de CSS
 1. ❌ O Guia Estelar de JavaScript
-1. ❌ Guia Estelar de Git
+1. ✅ Guia Estelar de Git
 1. ❌ Guia Estelar de Github
 
 #
