@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Rocketseat Discover](images/rocketseat_discover.png)
+![Rocketseat Discover](images/rocketseat_discover_dark.png)
 
 </div>
 
