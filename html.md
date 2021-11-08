@@ -156,7 +156,7 @@ Atributos:
 -> _required_: campo de preenchimento obrigatório\
 -> _placeholder=""_: texto sugestivo dentro do campo
 
-Tipo _password_:
+**Tipo _password_ - `<input type="password">`:**
 
 ```html
 `<input
@@ -177,21 +177,87 @@ Atributos:\
 -> _inputmode=""_: configura o tipo de teclado que deve aparecer: numeric, por exemplo\
 -> _autocomplete=""_: ligado/desligado: "on/off", tem outras opções
 
-Tipo _email_:
+**Tipo _email_ - `<input type="email">`:**
 
 Espera que o usuário entre um email e faz uma validação básica.
 
 Atributos: \
 -> _placeholder=""_ \
+-> _value=""_: valor previamente preenchido no campo\
 -> _readonly_ \
 -> _disabled_ \
--> _value=""_ \
 -> _required_ \
 -> _multiple_: aceita várias entradas separadas por vírgula\
 -> _minlength / maxlength_ \
 -> _size=""_: tamanho do campo em número de caracteres \
 -> _pattern_: regex, por ex, apenas emails do domínio rocketseat: `pattern=".+@rocketseat\.com\.br"` \
--> _title_ \
--> _list_: link com um ID de uma datalist para sugestões\
+-> _title_: o title é mostrado quando um valor inválido tenta ser enviado \
+-> _list_: faz link com um ID de uma `datalist` para sugestões
 
-<!-- URL https://app.rocketseat.com.br/node/formularios-de-outro-planeta/group/tags-de-entrada-de-dados/lesson/url-1 -->
+
+**Tipo *URL* - `<input type="url">`:**
+
+Espera que o usuário digite uma URL e faz validação.
+
+Atributos: \
+-> _placeholder=""_: ex. http://example.com \
+-> _value=""_: valor previamente preenchido no campo\
+-> _readonly_ \
+-> _disabled_ \
+-> _required_ \
+-> _minlength / maxlength_ \
+-> _size=""_: tamanho do campo em número de caracteres \
+-> _pattern_: regex \
+-> _list_: faz link com um ID de uma `datalist` para sugestões \
+-> _spellcheck="true"_: habilita correção ortográfica neste campo
+
+**Tipo *file* - `<input type="file">`:**
+
+Permite o usuário escolher um ou mais arquivos para enviar no formulário.
+
+Atributos: \
+-> _value=""_: contém o arquivo a ser enviado \
+-> _accept=""_: descreve os tipos de arquivos aceitos, ex: .doc, .png, image/* \
+-> _files_: lista de arquivo(s) a serem enviados \
+-> _multiple_: permite o envio de múltiplos arquivos \
+
+Para enviar arquivos, a tag `form` deve possuir um atributo _action=""_, com o destino, _method="post"_, e _enctype="multipart/form-data"_:
+
+```html
+<form action="" method="post" enctype="multipart/form-data">
+  <input type="file">
+  <button>Send</button>
+</form>
+```
+
+**Tipo *color* - `<input type="color">`:**
+
+Interface para selecionar uma cor
+
+Atributos: \
+-> _value=""_: RGB, se for inválido, será exibido preto \
+-> _list_: faz link com um ID de uma `datalist` para sugestões \
+
+
+**Tipo *checkbox* - `<input type="checkbox">`:**
+
+Caixas de seleção que podem ser marcadas/desmarcadas. Seleciona um valor a ser enviado. Se estiver desmarcado, nao envia nada. Se estiver marcado, envia o nome=on.
+
+Atributos: \
+-> _name_ \
+-> _value=""_: valor que é passado, por padrão é "on" \
+-> _checked_: estado inicial marcado \
+
+Para várias caixas, utiliza o mesmo _name_ e trocar os _value_. 
+
+**Tipo *hidden* - `<input type="hidden">`:**
+
+É invisível para o usuário, porém é enviado junto com o formulário. Por exemplo, para enviar um timestamp.
+
+**Tipo *radio* - `<input type="radio">`:**
+
+Permite a seleção de uma única opção em uma lista (com bolinhas).
+
+Atributos: \
+-> _checked_: indica o campo marcado inicialmente \
+-> _value_: valor que o campo contém \
