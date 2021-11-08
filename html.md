@@ -139,7 +139,7 @@ Elemento `datalist`: dropdown com uma lista de valores como sugestão a uma tag 
 </datalist>
 ```
 
-Tag `input`:
+**Tag `input`:**
 
 Atributos:
 
@@ -155,6 +155,8 @@ Atributos:
 -> _name=""_: key para os valores enviados ao backend\
 -> _required_: campo de preenchimento obrigatório\
 -> _placeholder=""_: texto sugestivo dentro do campo
+
+<br>
 
 **Tipo _password_ - `<input type="password">`:**
 
@@ -177,6 +179,8 @@ Atributos:\
 -> _inputmode=""_: configura o tipo de teclado que deve aparecer: numeric, por exemplo\
 -> _autocomplete=""_: ligado/desligado: "on/off", tem outras opções
 
+<br>
+
 **Tipo _email_ - `<input type="email">`:**
 
 Espera que o usuário entre um email e faz uma validação básica.
@@ -194,6 +198,7 @@ Atributos: \
 -> _title_: o title é mostrado quando um valor inválido tenta ser enviado \
 -> _list_: faz link com um ID de uma `datalist` para sugestões
 
+<br>
 
 **Tipo *URL* - `<input type="url">`:**
 
@@ -211,6 +216,8 @@ Atributos: \
 -> _list_: faz link com um ID de uma `datalist` para sugestões \
 -> _spellcheck="true"_: habilita correção ortográfica neste campo
 
+<br>
+
 **Tipo *file* - `<input type="file">`:**
 
 Permite o usuário escolher um ou mais arquivos para enviar no formulário.
@@ -219,7 +226,7 @@ Atributos: \
 -> _value=""_: contém o arquivo a ser enviado \
 -> _accept=""_: descreve os tipos de arquivos aceitos, ex: .doc, .png, image/* \
 -> _files_: lista de arquivo(s) a serem enviados \
--> _multiple_: permite o envio de múltiplos arquivos \
+-> _multiple_: permite o envio de múltiplos arquivos 
 
 Para enviar arquivos, a tag `form` deve possuir um atributo _action=""_, com o destino, _method="post"_, e _enctype="multipart/form-data"_:
 
@@ -230,14 +237,17 @@ Para enviar arquivos, a tag `form` deve possuir um atributo _action=""_, com o d
 </form>
 ```
 
+<br>
+
 **Tipo *color* - `<input type="color">`:**
 
 Interface para selecionar uma cor
 
 Atributos: \
 -> _value=""_: RGB, se for inválido, será exibido preto \
--> _list_: faz link com um ID de uma `datalist` para sugestões \
+-> _list_: faz link com um ID de uma `datalist` para sugestões 
 
+<br>
 
 **Tipo *checkbox* - `<input type="checkbox">`:**
 
@@ -246,13 +256,17 @@ Caixas de seleção que podem ser marcadas/desmarcadas. Seleciona um valor a ser
 Atributos: \
 -> _name_ \
 -> _value=""_: valor que é passado, por padrão é "on" \
--> _checked_: estado inicial marcado \
+-> _checked_: estado inicial marcado 
 
 Para várias caixas, utiliza o mesmo _name_ e trocar os _value_. 
+
+<br>
 
 **Tipo *hidden* - `<input type="hidden">`:**
 
 É invisível para o usuário, porém é enviado junto com o formulário. Por exemplo, para enviar um timestamp.
+
+<br>
 
 **Tipo *radio* - `<input type="radio">`:**
 
@@ -260,4 +274,124 @@ Permite a seleção de uma única opção em uma lista (com bolinhas).
 
 Atributos: \
 -> _checked_: indica o campo marcado inicialmente \
--> _value_: valor que o campo contém \
+-> _value_: valor que o campo contém 
+
+<br>
+
+**Tipo *search* - `<input type="search">`:**
+
+Usado para campos de busca. Igual ao tipo "text", porem podendos ser diferente dependendo do user agent (navegador).
+
+Atributos: \
+-> _list_: faz link com uma `datalist`  \
+-> _pattern_: regex \
+-> _aria-label_: opção de acessibilidade quando não se pode usar `label` 
+
+<br>
+
+**Tipo *number* - `<input type="number">`:**
+
+Espera uma entrada numérica.
+
+Atributos: \
+-> _min="" / max=""_ \
+-> _step_
+
+<br>
+
+**Tipo *range* - `<input type="range">`:**
+
+Exibe um controle para selecionar um valor numérico. Pode ser um slider ou dial control.
+
+Atributos: \
+-> _min="" / max=""_ \
+-> _step_
+
+<br>
+
+**Tipo *date* - `<input type="date">`:**
+
+Exibe um calendário para selecionar uma data.
+
+<br>
+
+**Tipo *datetime-local* - `<input type="datetime-local">`:**
+
+Utilizado para selecionar data e hora.
+
+<br>
+
+**Tipo *month* - `<input type="month">`:**
+
+Utilizado para selecionar um mês.
+
+<br>
+
+**Tipo *week* - `<input type="week">`:**
+
+Utilizado para selecionar uma semana.
+
+<br>
+
+**Tipo *time* - `<input type="time">`:**
+
+Utilizado para selecionar uma hora.
+
+#
+
+**Tag `textarea`:**
+
+Recebe entradas de texto com múltiplas linhas.
+
+Atributos: \
+-> _id=""_ \
+-> _name=""_ \
+-> _rows=""_ \
+-> _cols=""_ \
+-> _maxlength="" / minlength=""_ \
+-> _wrap="off"_: desativa a quebra de linha, pode ser *soft* ou *hard*, pesquisar \
+-> outros como para input: *autocomplete*, *autofocus*, *disabled*, *placeholder*, *readonly*, *form*, *required*. 
+
+```html
+<textarea name="message" id="message" cols="30" rows="10"></textarea>
+```
+
+#
+
+**Tags `select` e `option`:**
+
+Cria um dropdown com opções descritas com a tag `option` usando o atributo _value_.
+
+Atributos: \
+-> *multiple*: permite multiplas escolhas \
+-> *size*: define quantas opções aparecem na lista
+
+```html
+<label for="listaOpcoes">Qual a opção?</label>
+<select name="opcao" id="listaOpcoes">
+  <option value="" selected disabled>Selecione uma opção</option>
+  <option value="op1">Opção 1</option>
+  <option value="op2">Opção 2</option>
+  <option value="op3">Opção 3</option>
+  <option value="op4">Opção 4</option>
+</select>    
+```
+
+Elemento `optgroup`: cria grupos de opções que podem ser escolhidas, é filho de `select` e pai dos `option`.
+
+```html
+<label for="listaOpcoes">Qual a opção?</label>
+<select name="opcao" id="listaOpcoes"  multiple size="5">
+  <option value="" selected disabled>Selecione uma opção</option>
+  <optgroup label="Grupo 1">
+    <option value="op1">Opção 1</option>
+    <option value="op2">Opção 2</option>
+    <option value="op3">Opção 3</option>
+  </optgroup>
+    <optgroup label="Grupo 2">
+    <option value="op1">Opção 1</option>
+    <option value="op2">Opção 2</option>
+    <option value="op3">Opção 3</option>
+  </optgroup>
+</select>    
+```
