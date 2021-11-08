@@ -31,7 +31,7 @@
 
 ### 👨🏽‍🚀 **Preparação de astronautas**
 
-1. ❌ (HTML) Formulários de outro planeta
+1. ✔️ (HTML) Formulários de outro planeta
 1. ✔️ (HTML) HTML que faz sentido, para todos
 1. ✔️ (HTML) Posso ver e ouvir o HTML
 1. ❌ (JS) Pilotando com a DOM
