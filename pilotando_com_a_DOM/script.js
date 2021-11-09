@@ -7,7 +7,7 @@ console.log(textElements);
 // Retorna uma lista de objetos que possuem a classe, mesmo que exista apenas 1 (tipo HTML Collection)
 console.log(textElements[0]);
 
-const metaElements = document.getElementsByTagName("body");
+const metaElements = document.getElementsByTagName("meta");
 console.log(metaElements);
 // Retorna uma lista de objetos que possuem a tag, mesmo que exista apenas 1 (tipo HTML Collection)
 
@@ -130,3 +130,32 @@ console.log(child2.previousElementSibling); // (Element): tag span <span>Filho 1
 console.clear();
 
 // -----------------------------------------------------------------
+
+// Criar um novo elemento
+const newDiv1 = document.createElement("div");
+newDiv1.style.backgroundColor = "gray";
+newDiv1.innerHTML =
+  '<br><span style="background-color: yellow">Texto na nova div1</span>';
+
+const newDiv2 = document.createElement("div");
+newDiv2.style.backgroundColor = "yellow";
+newDiv2.innerHTML =
+  '<br><span style="background-color: gray">Texto na nova div2</span>';
+
+const newDiv3 = document.createElement("div");
+newDiv3.style.backgroundColor = "red";
+newDiv3.innerHTML =
+  '<br><span style="background-color: white">Texto na nova div3</span>';
+
+const body = document.querySelector("body");
+
+// Adicionar como primeiro filho
+body.prepend(newDiv1); // Adiciona "newDiv1" como o primeiro filho de "body"
+
+// Adicionar como último elemento
+body.append(newDiv2); // Adiciona "newDiv1" como o último filho de "body"
+
+// Adicionar antes de uma tag específica
+const script = body.querySelector("script"); // Pega a tag script de dentro do body, será a referência
+console.log(script);
+// script.insertBefore(newDiv3, script);

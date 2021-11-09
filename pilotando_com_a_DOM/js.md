@@ -186,6 +186,8 @@ console.log(child2.previousElementSibling); // (Element): tag span <span>Filho 1
 
 ## Criando e adicionando elementos na página
 
+
+
 <br>
 
 ## Eventos
