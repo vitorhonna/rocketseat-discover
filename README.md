@@ -35,12 +35,12 @@
 1. ✔️ (HTML) HTML que faz sentido, para todos
 1. ✔️ (HTML) Posso ver e ouvir o HTML
 1. ✔️ (JS) Pilotando com a DOM
+1. ✔️ (CSS) App bonito, até nos textos
 1. ✔️ (CSS) Nem tudo são pixels
 1. ❌ (CSS) Nem só de classes ou ID's
 1. ❌ (CSS) Uma caixa dentro da outra
-1. ❌ (CSS) App bonito, até nos textos
-1. ❌ (CSS) Posicionando foguetes
 1. ❌ (CSS) Agora sim, cores
+1. ❌ (CSS) Posicionando foguetes
 1. ❌ (CSS) Alinhando os planetas
 
 #
