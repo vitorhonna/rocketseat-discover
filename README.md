@@ -34,7 +34,7 @@
 1. ✔️ (HTML) Formulários de outro planeta
 1. ✔️ (HTML) HTML que faz sentido, para todos
 1. ✔️ (HTML) Posso ver e ouvir o HTML
-1. ❌ (JS) Pilotando com a DOM
+1. ✔️ (JS) Pilotando com a DOM
 1. ❌ (CSS) Nem tudo são pixels
 1. ❌ (CSS) Nem só de classes ou ID's
 1. ❌ (CSS) Uma caixa dentro da outra
@@ -79,7 +79,7 @@
 
 1. ✔️ Guia Estelar de HTML
 1. ✔️ Guia Estelar JavaScript
-1. ❌ Pilotando com a DOM
+1. ✔️ Pilotando com a DOM
 1. ✔️ Terminal
 1. 🔄 NodeJS
 1. ❌ Node + EJS
