@@ -186,8 +186,94 @@ console.log(child2.previousElementSibling); // (Element): tag span <span>Filho 1
 
 ## Criando e adicionando elementos na página
 
+```js
+// Criar um novo elemento
+const newDiv1 = document.createElement("div");
+newDiv1.style.backgroundColor = "gray";
+newDiv1.innerHTML =
+  '<br><span style="background-color: yellow">Texto na nova div1</span>';
 
+const newDiv2 = document.createElement("div");
+newDiv2.style.backgroundColor = "yellow";
+newDiv2.innerHTML =
+  '<br><span style="background-color: gray">Texto na nova div2</span>';
+
+const newDiv3 = document.createElement("div");
+newDiv3.style.backgroundColor = "red";
+newDiv3.innerHTML =
+  '<br><span style="background-color: white">Texto na nova div3</span>';
+
+const newDiv4 = document.createElement("div");
+newDiv4.style.backgroundColor = "green";
+newDiv4.innerHTML =
+  '<br><span style="background-color: white">Texto na nova div4</span>';
+
+const body = document.querySelector("body");
+
+// Adicionar como primeiro filho
+body.prepend(newDiv1); // Adiciona "newDiv1" como o primeiro filho de "body"
+
+// Adicionar como último elemento
+body.append(newDiv2); // Adiciona "newDiv1" como o último filho de "body"
+
+// Adicionar antes de uma tag específica
+const script = body.querySelector("script"); // Pega a tag script de dentro do body, será a referência
+console.log(script);
+body.insertBefore(newDiv3, script);
+
+// Não existe "insertAfter", mas para inserir após uma tag especifica, pode-se fazer:
+body.insertBefore(newDiv4, inputElement.nextSibling); // Insere após o elemento de input
+```
 
 <br>
 
 ## Eventos
+
+Eventos podem ser adicionados "inline" na tag como um atributo. Os nomes começam com "on...", por exemplo: `onclick`, `ondblclick`, etc.
+Para um evento, deve ser passada uma função que será executada.
+
+```html
+<h2 onclick="print()">Click here to print!</h2>
+```
+
+```js
+function print() {
+  console.log("Print!!");
+}
+```
+
+Também é possível adicionar os eventos diretamente por JS:
+
+```html
+<input value="valor1" />
+```
+
+```js
+const input = document.querySelector("input");
+
+function print() {
+  console.log("Print!!");
+}
+
+input.onkeypress = print; // Aqui deve ser passado apenas o nome da função, como uma variável
+
+// É possível definir a função diretamente:
+input.onfocus = function () {
+  console.log("Recebendo input...");
+};
+
+// Adicionar evento com addEventListener passando o evento e a função:
+input.addEventListener("blur", function () {
+  console.log("Parei de receber input.");
+});
+// Obs: os nomes de eventos quando passados para o EventListener não têm o 'on' no início.
+// Obs2: É mais recomendável passar eventos utilizando addEventListener pois isso evita que algum evento seja sobrescrito, com addEventListener é possível que com um único evento de click, por exemplo, várias funções sejam executadas.
+
+// As funções passadas para eventos podem receber, entre outros, o parâmetro 'event', que contém diversas informações sobre o evento, como a posição do mouse em um click, uma tecla pressionada, etc:
+
+const h2Element = document.querySelector("h2");
+
+h2Element.addEventListener("dblclick", (event) => {
+  console.log(event);
+});
+```
