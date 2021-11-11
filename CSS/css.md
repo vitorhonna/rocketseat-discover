@@ -24,6 +24,7 @@
 ## Nem tudo são pixels
 
 - Tipos numéricos:
+
   - \<integer> : -10, 200
   - \<number> : -2.4, 64, 0.25
   - \<dimension> : 90deg, 2s, 8px
@@ -169,7 +170,7 @@ Caso 2: Não selecionará nada, pois o primeiro filho não é um li, mas um h2.
 </ul>
 ```
 
-- `:nth-of-type(x)`: seleciona o enésimo (x) elemento filho de um determinado tipo. Começa a contagem em 1. No caso 2 do exemplo anterior, para selecionar o li que contém "A": `ul li:nth-of-type(1)`.
+- `:nth-of-type(x)`: seleciona o enésimo (x) elemento de um determinado tipo. Começa a contagem em 1. No caso 2 do exemplo anterior, para selecionar o li que contém "A": `ul li:nth-of-type(1)`.
 
 - `:nth-child(x)`: seleciona o enésimo (x) elemento filho. Não faz distinção de tipo, se a condição não for satisfeita é simplesmente ignorada. No caso 2 do exemplo anterior, `ul li:nth-child(1)` não seleciona nada, `ul li:nth-child(2)` seleciona o li que contém "A".
 
@@ -200,6 +201,56 @@ Também é possível combinar pseudo-classes com pseudo-elements, por exemplo: `
 <br>
 
 ## Uma caixa dentro da outra
+
+**Box model**: estrutura dos elementos HTML com width, height, content, border, padding e margin.
+
+- `box-sizing`: Define como o tamanho da box é calculado.
+
+  - `box-sizing: content-box`: as propriedades de tamanho (width/height) são aplicadas ao conteúdo, não à box.
+  - `box-sizing: border-box`: as propriedades de tamanho são aplicadas à box.
+
+- `display`: Define como uma box se comporta em relação a outra (comportamento externo).
+
+  - `display: block`: ocupa toda a linha, tamanho pode ser definido, além de padding, margin, border. Por padrão: p, div, section, headings h1, h2...
+  - `display: inline`: coloca os elementos lado a lado, tamanho **não** pode ser definido, apenas os valores **horizontais** de padding, margin e border são considerados. Por padrão: a, strong, span, em...
+  - `display: inline-block`: coloca os elementos lado a lado mas permite definição de tamanho.
+
+- `margin`: Define os espaços entre os elementos. Pode receber valores em _<length>_, _<percentage>_ ou _auto_.
+  - `margin-top: <value>`
+  - `margin-right: <value>`
+  - `margin-bottom: <value>`
+  - `margin-left: <value>`
+  - Shorthand:
+    - `margin: <top-value> <right-value> <bottom-value> <left-value>`.
+    - Ex: `margin: 10px 11px 12px 13px` = 10px acima, 11 à direita, 12 embaixo e 13 à esquerda.
+    - `margin: <top-value> <right-left-values> <bottom-value>`.
+    - Ex: `margin: 10px 11px 12px` = 10px acima, 11 a direita e à esquerda, 12 embaixo.
+    - `margin: <top-bottom-values> <right-left-values>`.
+    - Ex: `margin: 10px 11px` = 10px acima e abaixo, 11 a direita e à esquerda.
+    - `margin: <all-values>`.
+    - Ex: `margin: 10px` - 10px em todas as direções.
+
+**IMPORTANTE:** _margin collapsing_ -> a margem de baixo de um elemento é colapsada com a margem de cima do elemento seguinte, assim, as distâncias não são somadas. Se houver diferença de tamanho, vale a maior. Já para margens horizontais o comportamento é outro, as distâncias sao somadas. Se os elementos tiverem display diferentes (ex inline-block e block), as margens verticais são somadas. [Exemplos aqui](./style.css).
+
+- `padding`: Define o preenchimento interno da box. É muito semelhante ao _margin_, porém internamente.
+
+**IMPORTANTE:** o _padding_ pode causar alterações na largura de um elemento dependendo de sua _box-sizing_.
+
+- `border`: bordas da box. "Super shorthand", recebe três valores e aplica a todas as bordas:
+  - `<border-width>`: largura.
+  - `<border-style>`: estilo, há muitos tipos, ex: solid, dotted, dashed, etc.
+  - `<border-color>`: cor.
+  - Shorthand: pode-se atribuir características específicas para cada borda (top, right, bottom, left) especificando. Ex: `border-top-color: red`.
+  - Para retirar a borda: `none`.
+
+**IMPORTANTE:** por padrão, a borda está **fora** da box, ou seja, uma box de 100px, com borda de 1px, terá 102px em uma determinada direção. Para manter o tamanho definido para a box, usar `box-sizing: border-box`.
+
+- `outline`: semelhante a `border`, mas difere em alguns aspectos:
+  - Não é parte do Box Model, entao **não modifica** o tamanho da box (fica ao redor da border).
+  - Pode sobrepor outros elementos, dependendo do tamanho.
+  - Pode ser diferente de retangular.
+  - Não permite ajustes individuais.
+  - É mais usado pelo _user agent_ para acessibilidade.
 
 <br>
 
