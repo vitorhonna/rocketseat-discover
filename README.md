@@ -38,7 +38,7 @@
 1. ✔️ (CSS) App bonito, até nos textos
 1. ✔️ (CSS) Nem tudo são pixels
 1. ✔️ (CSS) Nem só de classes ou ID's
-1. ❌ (CSS) Uma caixa dentro da outra
+1. ✔️ (CSS) Uma caixa dentro da outra
 1. ❌ (CSS) Agora sim, cores
 1. ❌ (CSS) Posicionando foguetes
 1. ❌ (CSS) Alinhando os planetas
