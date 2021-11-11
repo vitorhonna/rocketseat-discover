@@ -76,7 +76,7 @@ p:hover,
 Também é possível especificar os valores de atributos:
 
 ```css
-\[class="red"] {
+[class="red"] {
   color: red;
 }
 ```
@@ -255,6 +255,32 @@ Também é possível combinar pseudo-classes com pseudo-elements, por exemplo: `
 <br>
 
 ## Agora sim, cores
+
+**Colors:**
+
+- **Named value**: nome da cor, ex: `red`, `green`, `blue`.
+- **HEX**: valor hexadecimal para vermelho, verde e azul. Vai de _00_ a _ff_. Por exemplo: #0000ff é azul, com _00_ para vermelho, _00_ para verde e _ff_ para azul. Pode ser adicionada transparência colocando o valor a direita: #0000ff7a é azul com 50% de transparência.
+- **RGB / RGBA**: valores numéricos para vermelho, verde e azul. Vai de _0_ a _255_. Ex: rgb(0,0,255) é azul. Para adicionar transparência, passar um valor de 0 a 1 para o canal alpha: rgba(0,0,255,0.5) é azul com 50% de transparência.
+- **HSL / HSLA**: valores para hue, saturation e lightness. Hue vai de 0 a 359 (ângulo no disco, partindo de vermelho 0º, sendo verde em 120º e azul em 240º). Saturation vai de 0 a 100% (posição radial no disco, sendo o centro sem saturação). Lightness vai de 0 a 100% sendo: 0% preto, 100% branco e 50% o tom "padrão" para aquela cor. De 0% a 50% a cor é escurecida, e de 50% a 100% a cor é clareada. Ex: hsl(240, 100%, 50%) é azul. Para adicionar transparência, passar um valor de 0 a 1 para o canal alpha: hsla(240,100%,50%,0.5) é azul com 50% de transparência.
+
+**Background:**
+
+- `background-color`
+- `background-image`
+- `background-repeat`: por padrão repete a imagem, para desativar, passar `no-repeat`. Para repetir em Y: `repeat-y`. Para repetir em X: `repeat-x`.
+- `background-position`: posição do fundo, pode receber valores para o eixo vertical e horizontal, se apenas um, aplica em ambos. `top`, `right`, `bottom`, `left`.
+- `background-size`:
+  - `background-size: cover`: imagem aumenta ou diminui para cobrir o elemento.
+  - `background-size: contain`: uma das dimensoes se adapta para que a imagem fique contida no elemento.
+  - `background-size: <valueX> <valueY>`: altera o tamanho da imagem.
+- `background-origin`:
+  - `border-box`: inicia a background image sob a border.
+  - `content-box`: coloca a background image no content, respeitando o padding, por ex.
+  - `padding-box`: inicia a background image a partir do content (ignora padding).
+- `background-clip`: mesma coisa do `origin` mas atua tanto a imagem quanto na cor.
+- `background-attachment`: manipula como a imagem está "presa" à tela. Por padrão é `scroll`, mas pode receber `fixed` para não rolar com a página. Se for o background de um elemento, esse elemento fica semelhante a uma "janela" que mostra partes do background.
+
+Para colocar múltiplos backgrounds, separar por vírgulas no shorthand.
 
 <br>
 

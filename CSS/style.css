@@ -35,5 +35,22 @@ div:nth-of-type(4) {
 div:nth-of-type(5) {
   display: inline-block;
   background-color: orange;
+  /* background-color: hsl(220, 100%, 50%); */
   margin: 20px;
+}
+
+.background {
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  padding: 15px;
+  color: transparent;
+  border-style: dashed;
+  background-color: pink;
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/71+mDoHG4mL.png);
+  background-repeat: no-repeat;
+  background-position: 100px center;
+  background-size: auto 250px;
+  background-clip: content-box;
+  background-attachment: fixed;
 }
