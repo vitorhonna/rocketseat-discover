@@ -286,6 +286,24 @@ Para colocar múltiplos backgrounds, separar por vírgulas no shorthand.
 
 ## Posicionando foguetes
 
+Fluxo normal dos elementos: um abaixo do outro (box) ou um ao lado do outro (inline).
+
+`position`: controla onde o elemento irá ficar, alterando o fluxo normal dos elementos.
+
+- `position: static`: valor padrão (fluxo normal).
+
+- `position: relative`: Seu lugar se mantém reservado no fluxo (nenhum outro elemento o ocupa). Não muda a ancoragem (fica referente a sua posição original - `left: 0px; right: 0px` é sua posição original). Permite a definição de 5 propriedades de posicionamento:
+
+  - `top: <value>`
+  - `right: <value>`
+  - `bottom: <value>`
+  - `left: <value>`
+  - `z-index: <value>`
+
+- `position: absolute`: Seu lugar não se mantém reservado no fluxo (outros elementos tomam seu lugar). Muda a ancoragem para ter referência na página toda (`left: 0px; right: 0px` é o canto superior esquerdo da viewport). Contudo, se o elemento pai possuir um `position` diferente de `static`, o elemento pai se torna a referência para ancoragem. Também permite a definição de 5 propriedades de posicionamento.
+
+- `position: fixed`: Elemento fixo na tela. Mantém a ancoragem em sua posição natural, mas deixa outros elementos ocuparem seu lugar. Permite a definição de 5 propriedades de posicionamento.
+
 <br>
 
 ## Alinhando os planetas
