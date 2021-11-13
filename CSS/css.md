@@ -304,6 +304,15 @@ Fluxo normal dos elementos: um abaixo do outro (box) ou um ao lado do outro (inl
 
 - `position: fixed`: Elemento fixo na tela. Mantém a ancoragem em sua posição natural, mas deixa outros elementos ocuparem seu lugar. Permite a definição de 5 propriedades de posicionamento.
 
+- `position: flex`: flexbox. É aplicado ao elemento pai e altera como os elementos filhos são posicionados. Por padrão, coloca os elementos inline, para mudar para coluna (normal sem flexbox): `flex-direction: column`. 
+  - `justify-content: space-between`: justifica os elementos adicionando espaço entre eles. O primeiro elemento fica colado a esquerda e o último colado a direita.
+  - `justify-content: center`: centraliza os elementos (todos colados).
+
+- `display: grid`: grid. É aplicado ao elemento pai e cria uma malha com espaços para posicionar os elementos filhos.
+  - `grid-template-areas: "<areaName> <areaName>"...`: cria o template para o posicionamento dos elementos filhos. Cada linha é identificada com uma string que contém os nomes dos elementos separados por espaço, ex: `"header header" "main   side"`. Esses nomes depois devem ser atribuídos aos elementos filhos utilizando: `grid-area: <nome>`, por ex: `grid-area: header`.
+  - `grid-template-rows: <value> <value>...`: define o tamanho das linhas. Ex: `grid-template-rows: 80px 1fr 40px`. `fr` é uma unidade de fração, nesse caso, como as outras medidas são fixas, vai ocupar todo o espaço restante.
+  - `grid-template-columns: <value> <value>...`: define o  tamanho das colunas. Ex: `grid-template-columns: 1fr 125px`.
+
 <br>
 
 ## Alinhando os planetas

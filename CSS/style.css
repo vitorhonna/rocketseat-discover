@@ -1,13 +1,13 @@
 * {
   margin: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+    Verdana, sans-serif;
 }
 
 h2 {
   font-weight: 400;
   color: rgba(128, 128, 128, 0.9);
-  margin: 20px auto 30px auto;
+  margin: 20px auto 15px auto;
   text-align: center;
   background-color: rgba(211, 211, 211, 0.3);
   background-clip: border-box;
@@ -128,10 +128,6 @@ div {
   z-index: 1;
 }
 
-.stacking {
-  /* position: relative; */
-}
-
 #div12 {
   background-color: lightcoral;
   position: relative;
@@ -151,4 +147,67 @@ div {
   position: absolute;
   margin: 20px;
   z-index: 2;
+}
+
+.flexContainer {
+  background-color: rgba(211, 211, 211, 0.25);
+  display: flex;
+  height: 300px;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+#div15 {
+  background-color: darkblue;
+  color: white;
+}
+
+#div16 {
+  background-color: darkorchid;
+  color: white;
+}
+
+#div17 {
+  background-color: darkorange;
+  color: white;
+}
+
+.centerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridBody {
+  background-color: rgba(211, 211, 211, 0.25);
+  height: 500px;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main   side"
+    "footer footer";
+  grid-template-rows: 80px 1fr 40px;
+  grid-template-columns: 1fr 125px;
+}
+
+.gridHeader {
+  background-color: orange;
+  grid-area: header;
+}
+
+.gridContent {
+  background-color: red;
+  grid-area: main;
+}
+
+.gridSidebar {
+  background-color: yellow;
+  grid-area: side;
+}
+
+.gridFooter {
+  background-color: lightpink;
+  grid-area: footer;
 }
