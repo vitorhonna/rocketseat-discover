@@ -23,9 +23,7 @@ console.log(students[1]);
 
 for (let student of students) {
   let msg = `The student ${student.name} is ${student.age}, has
-${student.stars} stars and ${
-    student.isSubscribed ? "is" : "isn't"
-  } subscribed.`;
+${student.stars} stars and ${student.isSubscribed ? "is" : "isn't"} subscribed.`;
 
   console.log(msg);
 }
@@ -56,8 +54,11 @@ console.log(soma(1, 5));
 
 ```js
 // soma.js
-import { soma } from "./soma.js";
-console.log(soma(1, 5));
+module.exports = {
+  soma: function (num1, num2) {
+    return num1 + num2;
+  },
+};
 ```
 
 ```js
@@ -232,7 +233,7 @@ for (let key in person) {
 // for (let property of person) {} // ERRO: "Uncaught TypeError: person is not iterable"
 
 // Objetos iteráveis: Arrays, Strings
- let people = ["Vitor", "Luis", "Daniel", "Mayk"];
+let people = ["Vitor", "Luis", "Daniel", "Mayk"];
 
 for (let index in people) {
   console.log(index);
@@ -242,5 +243,4 @@ for (let index in people) {
 for (let person of people) {
   console.log(person);
 }
-
 ```
