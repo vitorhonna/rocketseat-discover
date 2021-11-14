@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+    Verdana, sans-serif;
+}
+
+h2 {
+  font-weight: 400;
+  color: rgba(128, 128, 128, 0.9);
+  margin: 15px auto 15px auto;
+  text-align: center;
+  background-color: rgba(211, 211, 211, 0.3);
+  background-clip: border-box;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 10px 25px;
+  width: fit-content;
+  padding: 10px 20px;
+}
+
+h2,
+div {
+  /* Disable selection */
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.body {
+  flex-grow: 1;
+  border-top: 1px dashed rgba(128, 128, 128, 0.4);
+}
+
+/****************** Desafio 1 ******************/
+
+#d1 .body header {
+  background-color: lightblue;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#d1 ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#d1 li:last-child {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/****************** Desafio 2 ******************/
+
+#d2 .col {
+  background-color: hsla(195, 53%, 85%);
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 3px;
+  text-align: center;
+  padding: 15px;
+}
+
+#d2 .body {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#d2 .col1 {
+  flex-basis: 25%;
+}
+
+#d2 .col2 {
+  flex-grow: 1;
+}
+
+/****************** Desafio 3 ******************/
+
+#d3 .body {
+  justify-content: center;
+  display: flex;
+  gap: 0.8rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+#d3 img {
+  width: 30%;
+}
+
+#d3 img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}

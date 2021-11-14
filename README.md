@@ -41,7 +41,7 @@
 1. ✔️ (CSS) Uma caixa dentro da outra
 1. ✔️ (CSS) Agora sim, cores
 1. ✔️ (CSS) Posicionando foguetes
-1. ❌ (CSS) Alinhando os planetas
+1. ✔️ (CSS) Alinhando os planetas
 
 #
 

@@ -304,15 +304,54 @@ Fluxo normal dos elementos: um abaixo do outro (box) ou um ao lado do outro (inl
 
 - `position: fixed`: Elemento fixo na tela. Mantém a ancoragem em sua posição natural, mas deixa outros elementos ocuparem seu lugar. Permite a definição de 5 propriedades de posicionamento.
 
-- `position: flex`: flexbox. É aplicado ao elemento pai e altera como os elementos filhos são posicionados. Por padrão, coloca os elementos inline, para mudar para coluna (normal sem flexbox): `flex-direction: column`. 
+- `position: flex`: flexbox. É aplicado ao elemento pai e altera como os elementos filhos são posicionados. Por padrão, coloca os elementos inline, para mudar para coluna (normal sem flexbox): `flex-direction: column`.
+
   - `justify-content: space-between`: justifica os elementos adicionando espaço entre eles. O primeiro elemento fica colado a esquerda e o último colado a direita.
   - `justify-content: center`: centraliza os elementos (todos colados).
 
 - `display: grid`: grid. É aplicado ao elemento pai e cria uma malha com espaços para posicionar os elementos filhos.
-  - `grid-template-areas: "<areaName> <areaName>"...`: cria o template para o posicionamento dos elementos filhos. Cada linha é identificada com uma string que contém os nomes dos elementos separados por espaço, ex: `"header header" "main   side"`. Esses nomes depois devem ser atribuídos aos elementos filhos utilizando: `grid-area: <nome>`, por ex: `grid-area: header`.
+  - `grid-template-areas: "<areaName> <areaName>"...`: cria o template para o posicionamento dos elementos filhos. Cada linha é identificada com uma string que contém os nomes dos elementos separados por espaço, ex: `"header header" "main side"`. Esses nomes depois devem ser atribuídos aos elementos filhos utilizando: `grid-area: <nome>`, por ex: `grid-area: header`.
   - `grid-template-rows: <value> <value>...`: define o tamanho das linhas. Ex: `grid-template-rows: 80px 1fr 40px`. `fr` é uma unidade de fração, nesse caso, como as outras medidas são fixas, vai ocupar todo o espaço restante.
-  - `grid-template-columns: <value> <value>...`: define o  tamanho das colunas. Ex: `grid-template-columns: 1fr 125px`.
+  - `grid-template-columns: <value> <value>...`: define o tamanho das colunas. Ex: `grid-template-columns: 1fr 125px`.
 
 <br>
 
-## Alinhando os planetas
+## Alinhando os planetas (flexbox)
+
+**PROPRIEDADES APLICADAS NO ELEMENTO PAI:**
+
+- `flex-direction`: determina a direção dos itens. Pode receber `row` (padrão, elementos inline), `row-reverse` (inline começando do final), `column` (alinhamento vertical, um elemento sobre outro começando de cima), ou `column-reverse` (começa de baixo).
+
+- `flex-wrap: wrap`: criar mais de um eixo principal, aumentando o número de linhas (se necessário) para tentar respeitar o tamanho dos elementos. O padrão é `nowrap`.
+
+- `flex-flow` é um shorthand para `flex-direction` e `flex-wrap`.
+
+- `justify-content`: determina o alinhamento/distribuição dos elementos dentro de uma flexbox no EIXO PRINCIPAL.
+
+  - `justify-content: flex-start`: padrão, alinha à esquerda.
+  - `...flex-end`: alinha à direita.
+  - `...center`: centraliza.
+  - `...space-around`: adiciona espaços do mesmo tamanho ao redor (não colapsa os espaço, então entre dois elementos o tamanho do espaço será duplicado).
+  - `...space-between`: adiciona espaços entre os elementos, o primeiro fica colado à esquerda (ou em cima) e o último fica colado à direita (ou embaixo).
+  - `...espace-evenly`: adiciona espaços de mesmo tamanho entre os elementos.
+
+- `align-items`: determina o alinhamento dos elementos no EIXO CRUZADO.
+
+  - `align-items: stretch`: comportamento padrão, os elementos se esticam para preencher todo o espaço da flexbox.
+  - `...flex-start`: elementos ficam do tamanho do conteúdo e alinhados ao **início** do eixo cruzado.
+  - `...flex-end`: elementos ficam do tamanho do conteúdo e alinhados ao **final** do eixo cruzado.
+  - `center`: elementos ficam do tamanho do conteúdo e **centralizados**.
+
+- `gap: <lengthValue>`: adiciona espaços entre os elementos (não ao redor).
+
+**PROPRIEDADES APLICADAS NOS ELEMENTOS FILHOS:**
+
+- `flex-basis: <lengthValue>`: determina o tamanho do elemento ao longo do eixo principal: width (quando row) e height (quando column). Tem precedência em relação a tamanhos dinâmicos estabelecidos com `flex-grow`.
+
+- `flex-grow: <number>`: determina como um elemento deve crescer para o ocupar o espaço vazio. Por padrão é 0 (não cresce). O número indica a proporção entre os tamanhos dos elementos.
+
+- `flex-shrink: <number>`: determina como um elemento deve encolher dentro do container. Por padrão é 1 (o elemento encolhe). Para o valor 0 o elemento não encolhe. Se algum elemento tiver valor maior, ele encolherá mais que os outros (limitando-se ao tamanho de seu conteúdo, por exemplo).
+
+- `flex`: é um shorthand para `flex-grow`, `flex-shrink` e `flex-basis` (nessa ordem). Pode ter de 1 a 3 valores.
+
+- `order: <number>`: ordena os elementos. Por padrão é 0. Altera apenas visualmente, não estruturalmente (html). Por questões de acessibilidade, se possível, seria melhor alterar diretamente a ordem no HTML.

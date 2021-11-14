@@ -211,3 +211,55 @@ div {
   background-color: lightpink;
   grid-area: footer;
 }
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page .body {
+  background-color: lightgray;
+  height: 100%;
+  display: flex;
+}
+
+.page aside {
+  background-color: lightgreen;
+  flex-grow: 0.25;
+}
+
+.page aside:hover {
+  flex-grow: 2;
+  transition: 0.3s;
+}
+
+.page main {
+  background-color: lightskyblue;
+  flex-grow: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.page p:nth-of-type(1) {
+  background-color: lightyellow;
+  flex: 1;
+  order: 1;
+}
+
+.page p:nth-of-type(2) {
+  background-color: lightcoral;
+  flex: 1;
+  order: 3;
+}
+
+.page p:nth-of-type(3) {
+  background-color: lightpink;
+  flex: 1;
+  order: 2;
+}
+
+.page p:hover {
+  flex: 2;
+  transition: 0.3s;
+}
