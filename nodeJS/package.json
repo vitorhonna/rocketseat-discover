@@ -1,0 +1,13 @@
+{
+  "name": "greet-a-user",
+  "version": "1.0.0",
+  "description": "Greets the user. Receives a name using the flag --name and a greeting using the flag --greeting.",
+  "main": "script.js",
+  "scripts": {
+    "test": "node script.js --name 'Vitor' --greeting 'Welcome'",
+    "start": "node script.js --greeting 'Starting' --name 'Script'",
+    "helloWorld": "node script.js --greeting 'Hello' --name 'World'"
+  },
+  "author": "Vitor Honna",
+  "license": "MIT"
+}
