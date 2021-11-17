@@ -6,6 +6,20 @@
 
 </div>
 
+## Tecnologias Estudadas
+
+<div style="display: inline_block" align="center"><br>
+  <img align="center" alt="HTML" height="50" width="60" src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain.svg">
+  <img align="center" alt="CSS" height="50" width="60" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg">
+  <img align="center" alt="JS" height="50" width="60" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="Git" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+  <img align="center" alt="Github" height="50" width="60" src="https://github.com/vitorhonna/vitorhonna/blob/main/assets/github-white.svg">
+  <img align="center" alt="NodeJS" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+  <strong height="50" width="60">&nbsp; EJS &nbsp;</strong>
+  <img align="center" alt="Express" height="50" width="60" src="https://github.com/vitorhonna/vitorhonna/blob/main/assets/express-white.svg">
+  <strong height="50" width="60">&nbsp; SQL &nbsp;</strong>
+</div>
+
 ## Módulos
 
 <!-- ❌✅ -->
@@ -84,7 +98,7 @@
 1. ✔️ NodeJS
 1. ✔️ Node + EJS
 1. ✔️ SQL
-1. ✔️ Estrutura de Dados  ✨
+1. ✔️ Estruturas de Dados  ✨
 1. ✔️ Programação Orientada a Objetos ✨
 1. ✔️ Programação Funcional ✨
 1. ✔️ Guia Estelar de Git
