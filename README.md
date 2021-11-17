@@ -16,7 +16,7 @@
   <a href="/JavaScript/javascript.md"><img align="center" alt="JS" height="50" width="60" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg"></a>
   <a href="/Git/git.md"><img align="center" alt="Git" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"></a>
   <a href="https://github.com/vitorhonna"><img align="center" alt="Github" height="50" width="60" src="https://github.com/vitorhonna/vitorhonna/blob/main/assets/github-white.svg"></a>
-  <a href="/Node/node.md"><img align="center" alt="NodeJS" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"></a>
+  <a href="/node/node.md"><img align="center" alt="NodeJS" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"></a>
   <strong height="50" width="60">&nbsp; EJS &nbsp;</strong>
   <a href="/Node_EJS/EJS.md"><img align="center" alt="Express" height="50" width="60" src="https://github.com/vitorhonna/vitorhonna/blob/main/assets/express-white.svg"></a>
   <strong height="50" width="60">&nbsp; SQL &nbsp;</strong>
@@ -29,8 +29,8 @@
   📘 <a href="/CSS/css.md"><strong>CSS</strong></a>&nbsp;&nbsp; | &nbsp;&nbsp;
   📒 <a href="/JavaScript/javascript.md"><strong>JavaScript</strong></a>&nbsp;&nbsp; | &nbsp;&nbsp;
   🕓 <a href="/Git/git.md"><strong>Git</strong></a>&nbsp;&nbsp; | &nbsp;&nbsp;
-  💻 <a href="/Node/node.md"><strong>NodeJS</strong></a>&nbsp;&nbsp; | &nbsp;&nbsp;
-  📄 <a href="/Node_EJS/EJS.md"><strong>EJS</strong></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+  💻 <a href="/node/node.md"><strong>NodeJS</strong></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+  📄 <a href="/node_EJS/EJS.md"><strong>EJS</strong></a>&nbsp;&nbsp; | &nbsp;&nbsp;
   💾 <a href="/SQL/sql.md"><strong>SQL</strong></a>
 </div>
 
