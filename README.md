@@ -49,7 +49,7 @@
 
 1. ✔️ NodeJS: O Motor da Nave
 1. ✔️ NodeJS + EJS: HTML Inteligente
-1. 🔄 SQL, a caixa preta da nossa nave
+1. ✔️ SQL, a caixa preta da nossa nave
 
 #
 
@@ -83,7 +83,7 @@
 1. ✔️ Terminal
 1. ✔️ NodeJS
 1. ✔️ Node + EJS
-1. 🔄 SQL
+1. ✔️ SQL
 1. ✔️ Estrutura de Dados  ✨
 1. ✔️ Programação Orientada a Objetos ✨
 1. ✔️ Programação Funcional ✨
