@@ -304,7 +304,7 @@ Fluxo normal dos elementos: um abaixo do outro (box) ou um ao lado do outro (inl
 
 - `position: fixed`: Elemento fixo na tela. Mantém a ancoragem em sua posição natural, mas deixa outros elementos ocuparem seu lugar. Permite a definição de 5 propriedades de posicionamento.
 
-- `position: flex`: flexbox. É aplicado ao elemento pai e altera como os elementos filhos são posicionados. Por padrão, coloca os elementos inline, para mudar para coluna (normal sem flexbox): `flex-direction: column`.
+- `display: flex`: flexbox. É aplicado ao elemento pai e altera como os elementos filhos são posicionados. Por padrão, coloca os elementos inline, para mudar para coluna (normal sem flexbox): `flex-direction: column`.
 
   - `justify-content: space-between`: justifica os elementos adicionando espaço entre eles. O primeiro elemento fica colado a esquerda e o último colado a direita.
   - `justify-content: center`: centraliza os elementos (todos colados).
