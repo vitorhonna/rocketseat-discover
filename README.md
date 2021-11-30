@@ -18,7 +18,7 @@
   <a href="https://github.com/vitorhonna"><img align="center" alt="Github" height="50" width="60" src="https://github.com/vitorhonna/vitorhonna/blob/main/assets/github-white.svg"></a>
   <a href="/node/node.md"><img align="center" alt="NodeJS" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"></a>
   <strong height="50" width="60">&nbsp; EJS &nbsp;</strong>
-  <a href="/Node_EJS/EJS.md"><img align="center" alt="Express" height="50" width="60" src="https://github.com/vitorhonna/vitorhonna/blob/main/assets/express-white.svg"></a>
+  <a href="/node_EJS/EJS.md"><img align="center" alt="Express" height="50" width="60" src="https://github.com/vitorhonna/vitorhonna/blob/main/assets/express-white.svg"></a>
   <strong height="50" width="60">&nbsp; SQL &nbsp;</strong>
 </div>
 
