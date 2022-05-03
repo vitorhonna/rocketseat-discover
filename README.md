@@ -22,6 +22,20 @@
   <strong height="50" width="60">&nbsp; SQL &nbsp;</strong>
 </div>
 
+## Certificados
+
+<div align="center">
+  <a href="https://app.rocketseat.com.br/discover/certificates">
+    <img height="300px" alt="Certificado Discover Conectar" src="https://github.com/vitorhonna/rocketseat-discover/blob/main/images/discover-conectar-certificate.jpg">
+  </a>
+  <p>Código: c7426790-6094-411b-a353-b0fdf335da4f</p>
+  <br>
+  <a href="https://app.rocketseat.com.br/discover/certificates">
+    <img height="300px" alt="Certificado Discover Fundamentar" src="https://github.com/vitorhonna/rocketseat-discover/blob/main/images/discover-fundamentar-certificate.jpg">
+  </a>
+  <p>Código: 97673bb3-2d55-4b4b-a859-6b8b488e91e3</p>
+</div>
+
 ## Anotações
 
 <div align="center"><br>
@@ -36,7 +50,7 @@
 
 ## Módulos
 
-<!-- ❌✅ -->
+<!-- ❌✔️ -->
 
 ### 🚀 **Equipando sua nave**
 
@@ -93,22 +107,33 @@
 
 <!-- ❌✅ -->
 
-### 🌎 Conectar
+### 🌎 Conectar (Carga horária: 2 horas)
 
 1. ✔️ Guia Estelar de Programação
 1. ✔️ Computador, Software e Hardware ✨
 1. ✔️ Internet, Roteadores e Servidores ✨
 1. ✔️ Sistemas Operacionais ✨
-1. ✔️ Tipos de Aplicações WEB ✨
 1. ✔️ Linguagem de Programação ✨
-1. ✔️ Ambiente Dev
+1. ✔️ Tipos de Aplicações WEB ✨
 
 #
 
-### 🪐 Fundamentar
+### 🪐 Fundamentar (Carga horária: 29 horas)
 
+1. ✔️ Ambiente Dev
 1. ✔️ Guia Estelar de HTML
+1. ✔️ Guia Estelar de CSS
+1. ✔️ Nem tudo são Pixels
+1. ✔️ Uma caixa dentro da outra
+1. ✔️ Agora sim, cores
+1. ✔️ Posso ver e ouvir o HTML
+1. ✔️ Posicionando foguetes
+1. ✔️ App bonito, até nos textos
+1. ✔️ Formulários de outro planeta
 1. ✔️ Guia Estelar JavaScript
+1. ✔️ HTML que faz sentido, para todos
+1. ✔️ Nem só de classes ou IDs
+1. ✔️ Alinhando os planetas
 1. ✔️ Pilotando com a DOM
 1. ✔️ Terminal
 1. ✔️ NodeJS
@@ -120,3 +145,21 @@
 1. ✔️ Guia Estelar de Git
 1. ✔️ Guia estelar de Github
 1. ✔️ Guia Estelar de HTTP
+
+#
+
+### 🌌 Especializar (Carga horária: 7 horas)
+
+1. ❌ Javascript Assíncrono e Promises
+1. ❌ Trabalhando com APIs
+1. ❌ Fundamentos de ReactJS
+1. ❌ Fundamentos de Typescript
+
+
+
+
+
+
+
+
+
