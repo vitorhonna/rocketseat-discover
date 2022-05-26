@@ -670,3 +670,25 @@ h2Element.addEventListener("dblclick", (event) => {
   console.log(event);
 });
 ```
+
+<br>
+
+#
+
+# Trilha Especializar
+
+## **JS Assíncrono e Promises**
+
+
+
+#
+
+## **Trabalhando com APIs**
+
+#
+
+## **Fundamentos de ReactJS**
+
+#
+
+## **Fundamentos de Typescript**
