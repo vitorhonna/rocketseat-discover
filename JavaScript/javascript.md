@@ -679,7 +679,170 @@ h2Element.addEventListener("dblclick", (event) => {
 
 ## **JS Assíncrono e Promises**
 
+### Promises
+Uma Promise pode ter 4 estados:
+- `pending`: estado inicial, quando é criado
+- `fulfilled`: promessa concluída com sucesso
+- `rejected`: promessa rejeitada, erro
+- `settled`: promessa concluída, não importa se com sucesso ou erro
 
+
+Por exemplo, pedindo um uber:
+```js
+let driverAccepts = true;
+
+console.log('Pedir Uber');
+
+const promise = new Promise((resolve, reject) => {
+    return driverAccepts ? resolve('Carro chegou!') : reject('Pedido Negado');
+});
+
+promise
+    .then((result) => console.log(result))
+    .catch((error) => console.log(error))
+    .finally(() => console.log('Operação Finalizada'));
+
+console.log('Aguardando...');
+```
+
+### Promises com Fetch (browser)
+
+É possível encadear promises.
+
+Por exemplo, para pegar os repos de um user do github:
+```js
+fetch('https://api.github.com/users/vitorhonna')
+  .then((response) => response.json())
+  .then((data) => fetch(data.repos_url))
+  .then((r) => r.json())
+  .then((d) => console.log(d))
+  .catch((error) => console.log(error))
+```
+
+### Fetch no node
+
+Instalar:
+`npm install node-fetch`
+
+Importar:
+`import fetch from 'node-fetch'`
+
+
+### Promises com Axios (node)
+
+Instalar Axios:
+`npm install axios`
+
+Setar tipo como módulo no package.json:
+`"type": "module"`
+
+```js
+import axios from 'axios';
+
+axios
+    .get('https://api.github.com/users/vitorhonna')
+    .then((response) => axios.get(response.data.repos_url))
+    .then((repos) => console.log(repos.data))
+    .catch((error) => console.log(error));
+```
+
+## Promessas em paralelo: `Promise.all([<array de promises])`
+
+Recebe um array de promises e retorna um array de responses:
+
+```js
+import axios from 'axios';
+
+Promise.all([
+    axios.get('https://api.github.com/users/vitorhonna'),
+    axios.get('https://api.github.com/users/vitorhonna/repos'),
+])
+    .then((responses) => {
+        console.log(responses[0].data.login);
+        console.log(responses[1].data.length);
+    })
+    .catch((error) => console.error(error.message));
+```
+
+## Async / Await
+
+É uma maneira de se escrever promises (syntactic sugar). 
+
+No exemplo do uber (acima):
+```js
+let driverAccepts = true;
+
+console.log('Pedir Uber');
+
+const promise = new Promise((resolve, reject) => {
+    return driverAccepts ? resolve('Carro chegou!') : reject('Pedido Negado');
+});
+
+async function start() {
+    try {
+        const result = await promise;
+        console.log(result);
+    } catch (error) {
+        console.log(error);
+    } finally {
+        console.log('Operação Finalizada')
+    }
+}
+
+start();
+
+console.log('Aguardando...');
+```
+
+## Async / Await com Fetch
+
+No exemplo dos repos do github:
+```js
+import fetch from 'node-fetch';
+
+async function start() {
+    try {
+        const response = await fetch('https://api.github.com/users/vitorhonna');
+        const user = await response.json();
+        const reposResponse = await fetch(user.repos_url);
+        const repos = await reposResponse.json();
+        console.log(repos);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+start();
+```
+
+Funções assíncronas retornas promises, então é possível mesclar as sintaxes para fazer um código mais enxuto:
+
+```js
+import fetch from 'node-fetch';
+
+async function start() {
+    const user = await fetch('https://api.github.com/users/vitorhonna').then((r) => r.json());
+    const repos = await fetch(user.repos_url).then((r) => r.json());
+    console.log(repos);
+}
+
+start().catch((error) => console.log(error));
+```
+
+## Async / Await com Axios
+
+```js
+import axios from 'axios';
+
+async function getRepos() {
+    const user = await axios.get('https://api.github.com/users/vitorhonna')
+    const reposResponse = await axios.get(user.data.repos_url)
+    const repos = reposResponse.data
+    console.log(repos)
+}
+
+getRepos().catch(error => console.error(error));
+```
 
 #
 
