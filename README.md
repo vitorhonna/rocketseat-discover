@@ -150,7 +150,7 @@
 
 ### 🌌 Especializar (Carga horária: 7 horas)
 
-1. ❌ Javascript Assíncrono e Promises
+1. ✔️ Javascript Assíncrono e Promises
 1. ❌ Trabalhando com APIs
 1. ❌ Fundamentos de ReactJS
 1. ❌ Fundamentos de Typescript
