@@ -105,7 +105,7 @@
 
 ## Trilhas
 
-<!-- ❌✅ -->
+<!-- ❌✔️ -->
 
 ### 🌎 Conectar (Carga horária: 2 horas)
 
@@ -156,7 +156,7 @@
 1. ❌ Fundamentos de Typescript
 1. ❌ Github para times
 1. ❌ Transition e Animation
-1. ❌ SQL Avançado
+1. ✔️ SQL Avançado
 
 
 
