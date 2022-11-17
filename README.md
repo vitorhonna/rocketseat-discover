@@ -154,7 +154,9 @@
 1. ❌ Trabalhando com APIs
 1. ❌ Fundamentos de ReactJS
 1. ❌ Fundamentos de Typescript
-
+1. ❌ Github para times
+1. ❌ Transition e Animation
+1. ❌ SQL Avançado
 
 
 
