@@ -35,4 +35,6 @@
 
 - `git show <commit code>` : mostra as modificações inseridas por um commit, usar `--color-words` para destacar palavras alteradas
 
+- `git log --oneline --graph --all`: mostra um gráfico com as modificações, commits são resumidos para uma linha. Adicionar `-10` para imprimir apenas 10 commits (ou outro número). Adicionar `--simplify-by-decoration` para simplificar o histórico.
+
 [Referências adicionais](https://rogerdudler.github.io/git-guide/index.pt_BR.html)
